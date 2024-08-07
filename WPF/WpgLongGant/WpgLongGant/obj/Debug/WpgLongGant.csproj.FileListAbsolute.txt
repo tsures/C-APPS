@@ -1,0 +1,16 @@
+C:\Users\zur\source\WpgLongGant\WpgLongGant\bin\Debug\WpgLongGant.exe.config
+C:\Users\zur\source\WpgLongGant\WpgLongGant\bin\Debug\WpgLongGant.exe
+C:\Users\zur\source\WpgLongGant\WpgLongGant\bin\Debug\WpgLongGant.pdb
+C:\Users\zur\source\WpgLongGant\WpgLongGant\obj\Debug\MainWindow.g.cs
+C:\Users\zur\source\WpgLongGant\WpgLongGant\obj\Debug\App.g.cs
+C:\Users\zur\source\WpgLongGant\WpgLongGant\obj\Debug\WpgLongGant_MarkupCompile.cache
+C:\Users\zur\source\WpgLongGant\WpgLongGant\obj\Debug\WpgLongGant_MarkupCompile.lref
+C:\Users\zur\source\WpgLongGant\WpgLongGant\obj\Debug\MainWindow.baml
+C:\Users\zur\source\WpgLongGant\WpgLongGant\obj\Debug\WpgLongGant.g.resources
+C:\Users\zur\source\WpgLongGant\WpgLongGant\obj\Debug\WpgLongGant.Properties.Resources.resources
+C:\Users\zur\source\WpgLongGant\WpgLongGant\obj\Debug\WpgLongGant.csproj.GenerateResource.cache
+C:\Users\zur\source\WpgLongGant\WpgLongGant\obj\Debug\WpgLongGant.csproj.CoreCompileInputs.cache
+C:\Users\zur\source\WpgLongGant\WpgLongGant\obj\Debug\WpgLongGant.exe
+C:\Users\zur\source\WpgLongGant\WpgLongGant\obj\Debug\WpgLongGant.pdb
+C:\Users\zur\source\WpgLongGant\WpgLongGant\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\zur\source\WpgLongGant\WpgLongGant\obj\Debug\WpgLongGant.csprojAssemblyReference.cache

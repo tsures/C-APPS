@@ -1,0 +1,47 @@
+﻿<Window x:Class="WpgLongGant.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpgLongGant"
+        xmlns:local2="clr-namespace:WpgLongGant"
+        WindowStyle="SingleBorderWindow" WindowState="Maximized"
+        
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="1200">
+  
+   <Window.Resources>
+        <local:mvvm x:Key="WeekStyleViewModel" />
+    </Window.Resources>
+    <StackPanel Orientation="Vertical" Height="auto">
+        <DataGrid Name="dgvEvents" AutoGenerateColumns="False" ItemsSource="{Binding GanttEvents}" Width="auto" HorizontalAlignment="Left" GridLinesVisibility="Horizontal" Height="auto"
+                  HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible" FlowDirection="RightToLeft" FrozenColumnCount="1" >
+            <DataGrid.Resources>
+                <Style TargetType="DataGridCell">
+                    <Setter Property="ToolTip" Value="{Binding MachineName}" />
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Machine" Binding="{Binding MachineName}" FontSize="18" >
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                        <Setter Property="FontSize" Value="22"/>
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Machine_Events}" VerticalScrollBarVisibility="Visible" Height="auto">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding MACHINE_ID}"  Header="MACHINE_ID"/>
+                <DataGridTextColumn Binding="{Binding MACHINE_NAME}"  Header="MACHINE_NAME" />
+                <DataGridTextColumn Binding="{Binding START_DATE,StringFormat={}{0:dd/MM/yyyy}}"   Header="START_DATE"/>
+                <DataGridTextColumn Binding="{Binding END_DATE,StringFormat={}{0:dd/MM/yyyy}}" Header="END_DATE"/>
+                <DataGridTextColumn Binding="{Binding INIT_DATE_COEFFICIENT_NUM}"  Header="COEFFICIENT" />
+                <DataGridTextColumn Binding="{Binding START_WEEK_NUM}"  Header="START_WEEK_NUM"/>
+                <DataGridTextColumn Binding="{Binding END_WEEK_NUM}"  Header="END_WEEK_NUM"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </StackPanel>
+</Window>
+    

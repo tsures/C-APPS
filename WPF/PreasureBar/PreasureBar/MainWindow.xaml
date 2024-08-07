@@ -1,0 +1,21 @@
+﻿<Window x:Class="PreasureBar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PreasureBar"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Slider Name="PercentageSlider" Minimum="0" Maximum="100" Height="20" Width="200" Margin="0,0,0,100" Value="20"/>
+        <local:StatusBar HorizontalAlignment="Left" Height="80"  Margin="95,170,0,0" 
+                         FillPercentage="{Binding ElementName=PercentageSlider, Path=Value}"
+                         VerticalAlignment="Top" Width="200" RenderTransformOrigin="0.5,0.5">
+            <local:StatusBar.RenderTransform>
+                <TransformGroup>                    
+                    <RotateTransform Angle="0"/>                    
+                </TransformGroup>
+            </local:StatusBar.RenderTransform>
+        </local:StatusBar>
+    </Grid>
+</Window>

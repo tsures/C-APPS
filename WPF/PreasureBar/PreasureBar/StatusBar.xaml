@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="PreasureBar.StatusBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PreasureBar"
+             mc:Ignorable="d" 
+             d:DesignHeight="130" d:DesignWidth="400">
+    <Border BorderBrush="Wheat" BorderThickness="1" CornerRadius="5">
+    <Grid>
+        <Rectangle x:Name="BackgroundRectangle" Fill="Transparent" />
+        <Rectangle x:Name="GradientRectangle" HorizontalAlignment="Left">
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="Green" Offset="0.0" />
+                    <GradientStop Color="Yellow" Offset="0.5" />
+                    <GradientStop Color="Red" Offset="1.0" />
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="FilledRectangle" Fill="White" Opacity="0.5" />
+        <TextBlock x:Name="PercentageLabel" 
+                   Text="{Binding RelativeSource={RelativeSource AncestorType=UserControl}, Path=FillPercentage, StringFormat={}{0:F1}%}" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center" 
+                   FontSize="26" Foreground="White" Width="120" Height="50" >
+            <TextBlock.Effect>
+                <DropShadowEffect BlurRadius="5"/>
+            </TextBlock.Effect>
+                <TextBlock.RenderTransform>
+                    <RotateTransform Angle="0"/>
+                </TextBlock.RenderTransform>
+        </TextBlock>
+    </Grid>
+    </Border>
+</UserControl>

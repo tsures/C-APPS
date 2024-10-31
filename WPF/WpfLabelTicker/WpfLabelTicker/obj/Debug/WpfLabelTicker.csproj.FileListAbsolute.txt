@@ -1,0 +1,15 @@
+C:\Users\zur\source\WpfLabelTicker\WpfLabelTicker\bin\Debug\WpfLabelTicker.exe.config
+C:\Users\zur\source\WpfLabelTicker\WpfLabelTicker\bin\Debug\WpfLabelTicker.exe
+C:\Users\zur\source\WpfLabelTicker\WpfLabelTicker\bin\Debug\WpfLabelTicker.pdb
+C:\Users\zur\source\WpfLabelTicker\WpfLabelTicker\obj\Debug\MainWindow.g.cs
+C:\Users\zur\source\WpfLabelTicker\WpfLabelTicker\obj\Debug\App.g.cs
+C:\Users\zur\source\WpfLabelTicker\WpfLabelTicker\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\zur\source\WpfLabelTicker\WpfLabelTicker\obj\Debug\WpfLabelTicker_MarkupCompile.cache
+C:\Users\zur\source\WpfLabelTicker\WpfLabelTicker\obj\Debug\WpfLabelTicker_MarkupCompile.lref
+C:\Users\zur\source\WpfLabelTicker\WpfLabelTicker\obj\Debug\MainWindow.baml
+C:\Users\zur\source\WpfLabelTicker\WpfLabelTicker\obj\Debug\WpfLabelTicker.g.resources
+C:\Users\zur\source\WpfLabelTicker\WpfLabelTicker\obj\Debug\WpfLabelTicker.Properties.Resources.resources
+C:\Users\zur\source\WpfLabelTicker\WpfLabelTicker\obj\Debug\WpfLabelTicker.csproj.GenerateResource.cache
+C:\Users\zur\source\WpfLabelTicker\WpfLabelTicker\obj\Debug\WpfLabelTicker.csproj.CoreCompileInputs.cache
+C:\Users\zur\source\WpfLabelTicker\WpfLabelTicker\obj\Debug\WpfLabelTicker.exe
+C:\Users\zur\source\WpfLabelTicker\WpfLabelTicker\obj\Debug\WpfLabelTicker.pdb

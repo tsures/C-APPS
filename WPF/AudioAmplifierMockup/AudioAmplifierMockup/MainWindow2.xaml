@@ -1,0 +1,671 @@
+﻿<Window x:Class="AudioAmplifierMockup.MainWindow2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AudioAmplifierMockup"
+        mc:Ignorable="d"
+         Title="Audio Amplifier"
+        Width="1180"
+        Height="720"
+        MinWidth="1050"
+        MinHeight="650"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Background="#0B0D10">
+
+    <Window.Resources>
+
+        <LinearGradientBrush x:Key="BrushedMetalBrush" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#2A2C2F" Offset="0"/>
+            <GradientStop Color="#161719" Offset="0.45"/>
+            <GradientStop Color="#303235" Offset="1"/>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="DarkPanelBrush" StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#202225" Offset="0"/>
+            <GradientStop Color="#111214" Offset="1"/>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="LcdBrush" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#021120" Offset="0"/>
+            <GradientStop Color="#061D36" Offset="0.5"/>
+            <GradientStop Color="#02070B" Offset="1"/>
+        </LinearGradientBrush>
+
+        <DropShadowEffect x:Key="HeavyShadow"
+                          BlurRadius="35"
+                          ShadowDepth="8"
+                          Opacity="0.75"
+                          Color="Black"/>
+
+        <DropShadowEffect x:Key="BlueGlow"
+                          BlurRadius="18"
+                          ShadowDepth="0"
+                          Opacity="0.8"
+                          Color="#2E9BFF"/>
+
+        <Style x:Key="AmpButton" TargetType="Button">
+            <Setter Property="Width" Value="42"/>
+            <Setter Property="Height" Value="42"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Foreground" Value="#DDDDDD"/>
+            <Setter Property="Background" Value="#121315"/>
+            <Setter Property="BorderBrush" Value="#34373B"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Ellipse Fill="#070809"/>
+                            <Ellipse Margin="4">
+                                <Ellipse.Fill>
+                                    <RadialGradientBrush>
+                                        <GradientStop Color="#3A3C40" Offset="0"/>
+                                        <GradientStop Color="#151619" Offset="0.7"/>
+                                        <GradientStop Color="#050505" Offset="1"/>
+                                    </RadialGradientBrush>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="FlatActionButton" TargetType="Button">
+            <Setter Property="Height" Value="48"/>
+            <Setter Property="MinWidth" Value="150"/>
+            <Setter Property="Margin" Value="0,0,14,0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Foreground" Value="#EEEEEE"/>
+            <Setter Property="Background" Value="#1A1C1F"/>
+            <Setter Property="BorderBrush" Value="#383B40"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Padding" Value="16,0"/>
+        </Style>
+
+        <Style x:Key="SmallLabel" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#C8C8C8"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+
+        <Style x:Key="SmallerLabel"
+       TargetType="TextBlock"
+       BasedOn="{StaticResource SmallLabel}">
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+
+        <Style x:Key="SmallerLabelLightBlue"
+TargetType="TextBlock"
+BasedOn="{StaticResource SmallerLabel}">
+            <Setter Property="Foreground" Value="#32A3FF"/>
+        </Style>
+
+        <Style x:Key="BlueLabel" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#32A3FF"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+
+        <Style TargetType="ComboBox">
+            <Setter Property="Height" Value="44"/>
+            <Setter Property="Background" Value="#15171A"/>
+            <Setter Property="Foreground" Value="#EEEEEE"/>
+            <Setter Property="BorderBrush" Value="#3D4147"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Padding" Value="10,0"/>
+        </Style>
+
+        <Style TargetType="Slider">
+            <Setter Property="Foreground" Value="#2E9BFF"/>
+            <Setter Property="Height" Value="38"/>
+        </Style>
+
+        
+
+    </Window.Resources>
+
+    <Grid Margin="24">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="430"/>
+            <RowDefinition Height="24"/>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="70"/>
+        </Grid.RowDefinitions>
+
+        <!-- Amplifier body -->
+        <Border Grid.Row="0"
+                CornerRadius="18"
+                Background="{StaticResource BrushedMetalBrush}"
+                BorderBrush="#4D5156"
+                BorderThickness="1"
+                Effect="{StaticResource HeavyShadow}"
+                Padding="46,34">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="280"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="330"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Left side -->
+                <Grid Grid.Column="0" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="120"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.RowSpan="2">
+                        <TextBlock Text="AUDIO AMPLIFIER"
+                                   Foreground="#D9D9D9"
+                                   FontSize="24"
+                                   FontWeight="Light"
+                                   />
+
+                        <TextBlock Text="Windows Default Output Controller"
+                                   Foreground="#B8B8B8"
+                                   FontSize="13"
+                                   Margin="1,8,0,0"/>
+
+                        
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1"
+                                VerticalAlignment="Bottom"
+                                Orientation="Horizontal">
+
+                        <StackPanel Margin="0,0,36,0">
+                            <Ellipse Width="10"
+                                     Height="10"
+                                     Fill="#38A8FF"
+                                     Effect="{StaticResource BlueGlow}"
+                                     HorizontalAlignment="Center"
+                                     Margin="0,0,0,34"/>
+
+                            <Button Style="{StaticResource AmpButton}" Command="{Binding Close}"/>
+                            <TextBlock Text="POWER OFF"
+                                       Style="{StaticResource SmallLabel}"
+                                       Margin="0,14,0,0"/>
+                        </StackPanel>
+
+                        <StackPanel Margin="0,54,36,0">
+                            <Ellipse Width="26"
+                                     Height="26"
+                                     Stroke="#D6B46B"
+                                     StrokeThickness="3"
+                                     Fill="#050505"/>
+                            <TextBlock Text="PHONES"
+                                       Style="{StaticResource SmallLabel}"
+                                       Margin="0,18,0,0"/>
+                        </StackPanel>
+
+                        <StackPanel>
+                            <TextBlock Text="SPEAKERS"
+                                       Style="{StaticResource SmallLabel}"
+                                       Margin="0,0,0,10"/>
+
+                            <Grid Width="78" Height="78">
+                                <Ellipse Fill="#050505"/>
+                                <Ellipse Margin="7">
+                                    <Ellipse.Fill>
+                                        <RadialGradientBrush>
+                                            <GradientStop Color="#3B3D41" Offset="0"/>
+                                            <GradientStop Color="#111214" Offset="0.75"/>
+                                            <GradientStop Color="#000000" Offset="1"/>
+                                        </RadialGradientBrush>
+                                    </Ellipse.Fill>
+                                </Ellipse>
+                                <Rectangle Width="2"
+                                           Height="26"
+                                           Fill="#EDEAEA"
+                                           VerticalAlignment="Top"
+                                           Margin="0,12,0,0"
+                                           RenderTransformOrigin="0.5,1">
+                                    <Rectangle.RenderTransform>
+                                        <RotateTransform Angle="25"/>
+                                    </Rectangle.RenderTransform>
+                                </Rectangle>
+                            </Grid>
+
+                            <TextBlock Text="A    B    A+B"
+                                       Style="{StaticResource SmallLabel}"
+                                       Margin="0,8,0,0"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+
+                <!-- LCD and middle buttons -->
+                <Grid Grid.Column="1" Margin="10,0,10,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="88"/>
+                        <RowDefinition Height="170"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Border Grid.Row="0"
+                            Grid.RowSpan="2"
+                            CornerRadius="14"
+                            Background="#030405"
+                            BorderBrush="#3A3F45"
+                            BorderThickness="2"
+                            Padding="12">
+
+                        <Border CornerRadius="6"
+                                Background="{StaticResource LcdBrush}"
+                                Padding="20,14">
+
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <StackPanel>
+                                    <TextBlock Text="OUTPUT DEVICE"
+                                               Foreground="#48B7FF"
+                                               FontSize="13"
+                                               FontWeight="SemiBold"/>
+
+                                    <TextBlock Text="{Binding CurrentDeviceName}"
+                                               Foreground="#41A8FF"
+                                               FontSize="12"
+                                               FontWeight="Bold"
+                                               FontFamily="Consolas"
+                                               Margin="0,10,0,22"
+                                               TextWrapping="Wrap"
+                                               TextTrimming="CharacterEllipsis"/>
+
+                                    <!--<TextBlock Text="DATE"
+                                               Foreground="#48B7FF"
+                                               FontSize="22"
+                                               FontWeight="SemiBold"/>-->
+                                    <ItemsControl ItemsSource="{Binding EqualizerValues}"   MaxHeight="50" Height="50"                                                   
+                                                  VerticalAlignment="Center">
+                                        <ItemsControl.ItemsPanel>
+                                            <ItemsPanelTemplate>
+                                                <StackPanel Orientation="Horizontal"
+                                                            VerticalAlignment="Bottom"/>
+                                            </ItemsPanelTemplate>
+                                        </ItemsControl.ItemsPanel>
+
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <Border Width="6"
+                                                        Height="{Binding}"
+                                                        Margin="2,0"
+                                                        VerticalAlignment="Bottom"
+                                                        CornerRadius="3"
+                                                        Background="#38A8FF"/>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+
+                                    </ItemsControl>
+                                    <TextBlock Text="{Binding DateTimeText}"
+                                               Foreground="#41A8FF"
+                                               FontSize="22"
+                                               FontWeight="Bold"
+                                               FontFamily="Consolas"
+                                               Margin="0,9,0,0"/>
+                                    <!--<TextBlock Text="Time"
+                                               Foreground="#48B7FF"
+                                               FontSize="22"
+                                               FontWeight="SemiBold"/>-->
+                                    <TextBlock Text="{Binding TimeText}"
+                                               Foreground="#41A8FF"
+                                               FontSize="22"
+                                               FontWeight="Bold"
+                                               FontFamily="Consolas"
+                                               Margin="0,9,0,0"/>
+                                   
+
+                                </StackPanel>
+
+                                <StackPanel Grid.Column="1"
+                                            HorizontalAlignment="Right">
+                                    <TextBlock Text="VOLUME"
+                                               Foreground="#48B7FF"
+                                               FontSize="13"
+                                               FontWeight="SemiBold"/>
+
+                                    <StackPanel Orientation="Horizontal"
+                                                Margin="0,10,0,0"
+                                                HorizontalAlignment="Right">
+                                        <TextBlock Text="-"
+                                                   Foreground="#41A8FF"
+                                                   FontSize="44"
+                                                   FontFamily="Consolas"
+                                                   VerticalAlignment="Center"/>
+
+                                        <TextBlock Text="{Binding VolumeDisplay}"
+                                                   Foreground="#41A8FF"
+                                                   FontSize="48"
+                                                   FontWeight="Light"
+                                                   FontFamily="Consolas"
+                                                   VerticalAlignment="Center"/>
+
+                                        <TextBlock Text=" dB"
+                                                   Foreground="#41A8FF"
+                                                   FontSize="18"
+                                                   FontWeight="Bold"
+                                                   VerticalAlignment="Bottom"
+                                                   Margin="4,0,0,10"/>
+                                    </StackPanel>
+
+                                    <TextBlock Text="PCM  192kHz / 24bit"
+                                               Foreground="#48B7FF"
+                                               FontSize="13"
+                                               FontFamily="Consolas"
+                                               Margin="0,22,0,0"
+                                               HorizontalAlignment="Right"/>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+                    </Border>
+
+                    <StackPanel Grid.Row="2"
+                                Orientation="Horizontal"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Top"
+                                Margin="0,26,0,0">
+
+                        <StackPanel Margin="12,0">
+                            <TextBlock Text="INPUT" Style="{StaticResource SmallerLabel}" Margin="0,0,0,8"/>
+                            <Button Style="{StaticResource AmpButton}" Command="{Binding NextDeviceCommand}"/>
+                        </StackPanel>
+
+                        <StackPanel Margin="12,0">
+                            <TextBlock Text="🔇" Style="{StaticResource SmallerLabel}" Margin="0,0,0,8"/>
+                            <Button Style="{StaticResource AmpButton}" Command="{Binding MuteCommand}"/>
+                        </StackPanel>
+
+                        <StackPanel Margin="12,0">
+                            <TextBlock Text="🔉" Style="{StaticResource SmallerLabel}" Margin="0,0,0,8"/>
+                            <Button Style="{StaticResource AmpButton}" Command="{Binding VolumeDownCommand}"/>
+                        </StackPanel>
+
+                        <StackPanel Margin="12,0">
+                            <TextBlock Text="🔊" Style="{StaticResource SmallerLabel}" Margin="0,0,0,8"/>
+                            <Button Style="{StaticResource AmpButton}" Command="{Binding VolumeUpCommand}"/>
+                        </StackPanel>
+
+                        <StackPanel Margin="12,0">
+                            <TextBlock Text="🔇" Style="{StaticResource SmallerLabelLightBlue}"                                        
+                                       Margin="0,0,0,8"
+                                       />
+                            <Button Style="{StaticResource AmpButton}" Command="{Binding SemiMute}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+
+                <!-- Right controls -->
+                <Grid Grid.Column="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="260"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel HorizontalAlignment="Center">
+                        <TextBlock Text="VOLUME"
+                                   Style="{StaticResource SmallLabel}"
+                                   Margin="0,0,0,14"/>
+
+                        <Grid x:Name="VolumeKnob"
+                                Width="190"
+                                Height="190"
+                                Cursor="Hand"
+                                MouseLeftButtonDown="VolumeKnob_MouseLeftButtonDown"
+                                MouseLeftButtonUp="VolumeKnob_MouseLeftButtonUp"
+                                MouseMove="VolumeKnob_MouseMove"
+                                MouseWheel="VolumeKnob_MouseWheel">
+                            <Ellipse Fill="#030303"/>
+                            <Ellipse Margin="8"
+                                     Stroke="#050505"
+                                     StrokeThickness="6">
+                                <Ellipse.Fill>
+                                    <RadialGradientBrush Center="0.48,0.48">
+                                        <GradientStop Color="#4A4C50" Offset="0"/>
+                                        <GradientStop Color="#25272A" Offset="0.45"/>
+                                        <GradientStop Color="#0D0E10" Offset="1"/>
+                                    </RadialGradientBrush>
+                                </Ellipse.Fill>
+                            </Ellipse>
+
+                            <Ellipse Margin="24"
+                                     Stroke="#909399"
+                                     StrokeThickness="2"
+                                     Opacity="0.65"/>
+
+                            <Grid Width="190"
+      Height="190"
+      RenderTransformOrigin="0.5,0.5">
+                                <Grid.RenderTransform>
+                                    <RotateTransform Angle="{Binding VolumeKnobAngle}"/>
+                                </Grid.RenderTransform>
+
+                                <Rectangle Width="3"
+               Height="34"
+               Fill="#EAEAEA"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Top"
+               Margin="0,42,0,0"/>
+                            </Grid>
+                        </Grid>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1"
+                                Orientation="Horizontal"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Bottom">
+
+                        <StackPanel Margin="16,0">
+                            <TextBlock Text="BASS" Style="{StaticResource SmallLabel}" Margin="0,0,0,8"/>
+                            <Button Style="{StaticResource AmpButton}"/>
+                            <TextBlock Text="-        +" Style="{StaticResource SmallLabel}" Margin="0,8,0,0"/>
+                        </StackPanel>
+
+                        <StackPanel Margin="16,0">
+                            <TextBlock Text="TREBLE" Style="{StaticResource SmallLabel}" Margin="0,0,0,8"/>
+                            <Button Style="{StaticResource AmpButton}"/>
+                            <TextBlock Text="-        +" Style="{StaticResource SmallLabel}" Margin="0,8,0,0"/>
+                        </StackPanel>
+
+                        <StackPanel Margin="16,0">
+                            <TextBlock Text="BALANCE" Style="{StaticResource SmallLabel}" Margin="0,0,0,8"/>
+                            <Button Style="{StaticResource AmpButton}"/>
+                            <TextBlock Text="L        R" Style="{StaticResource SmallLabel}" Margin="0,8,0,0"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <!-- Bottom controls -->
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" Grid.ColumnSpan="3"
+                    CornerRadius="12"
+                    Background="{StaticResource DarkPanelBrush}"
+                    BorderBrush="AliceBlue"
+                    BorderThickness="1"
+                    Padding="3">
+
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="OUTPUT DEVICE SELECTION"
+                               Style="{StaticResource BlueLabel}" 
+                               VerticalAlignment="Top" 
+                               HorizontalAlignment="Center"
+                               Margin="0,0,0,10"/>
+                    <ScrollViewer HorizontalScrollBarVisibility="Auto"                                  
+                                  CanContentScroll="True" 
+                                  Height="80"
+                                  Width="1000"
+                                  VerticalScrollBarVisibility="Hidden"                                      
+                                  >
+
+                        <ScrollViewer.Resources>
+
+                            <Style TargetType="{x:Type ScrollBar}">
+                                <Setter Property="Height" Value="32"/>
+                                <Setter Property="Background" Value="Transparent"/>
+
+                                <Style.Triggers>
+
+                                    <!-- Horizontal scrollbar only -->
+                                    <Trigger Property="Orientation" Value="Horizontal">
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+
+                                                <ControlTemplate TargetType="ScrollBar">
+
+                                                    <Grid Background="Transparent"
+                                  Height="12">
+
+                                                        <Track x:Name="PART_Track">
+
+                                                            <Track.DecreaseRepeatButton>
+                                                                <RepeatButton Opacity="0"
+                                                      Command="ScrollBar.LineLeftCommand"/>
+                                                            </Track.DecreaseRepeatButton>
+
+                                                            <Track.Thumb>
+                                                                <Thumb Height="12">
+                                                                    <Thumb.Template>
+                                                                        <ControlTemplate TargetType="Thumb">
+                                                                            <Border Background="#6EC6FF"
+                                                            CornerRadius="4"
+                                                            Margin="1"/>
+                                                                        </ControlTemplate>
+                                                                    </Thumb.Template>
+                                                                </Thumb>
+                                                            </Track.Thumb>
+
+                                                            <Track.IncreaseRepeatButton>
+                                                                <RepeatButton Opacity="0.2"
+                                                      Command="ScrollBar.LineRightCommand"/>
+                                                            </Track.IncreaseRepeatButton>
+
+                                                        </Track>
+                                                    </Grid>
+
+                                                </ControlTemplate>
+
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Trigger>
+
+                                </Style.Triggers>
+                            </Style>
+
+                        </ScrollViewer.Resources>
+                        <ItemsControl ItemsSource="{Binding Devices}"
+                                  d:ItemsSource="{d:SampleData ItemCount=5}"
+                                  >
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <!--<StackPanel CanVerticallyScroll="True">
+                                <Button Content="{Binding ShortName}"  ToolTip="{Binding Name}"
+                    Height="30"
+                    Width="20"
+                    MaxWidth="30"
+                    Margin="0,0,12,2"
+                    Style="{StaticResource FlatActionButton}"
+                    Command="{Binding DataContext.SetSelectedDeviceCommand,
+                                      RelativeSource={RelativeSource AncestorType=ItemsControl}}"                                       
+                    CommandParameter="{Binding}"/>
+                                    <TextBlock Text="{Binding Name}" 
+                                               HorizontalAlignment="Left"
+                                               Height="30" Width="120"
+                                               Foreground="Wheat" d:Text="TEST TEST TEST TEST TEST TEST" 
+                                               TextWrapping="Wrap"/>
+                                </StackPanel>-->                                
+
+                                    <StackPanel >
+
+                                        <Button Content="{Binding ShortName}"
+                ToolTip="{Binding Name}"
+                Height="30"
+                Width="20"
+                MaxWidth="30"
+                Margin="0,0,12,2"
+                Style="{StaticResource FlatActionButton}"
+                Command="{Binding DataContext.SetSelectedDeviceCommand,
+                                  RelativeSource={RelativeSource AncestorType=ItemsControl}}"
+                CommandParameter="{Binding}"/>
+
+                                        <TextBlock Text="{Binding Name}"
+                   HorizontalAlignment="Left"
+                   Height="30"
+                   Width="120"
+                   Foreground="Wheat"
+                   TextWrapping="Wrap"/>
+
+                                    </StackPanel>
+
+                                 
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                    </ScrollViewer>
+
+                </StackPanel>
+            </Border>
+
+           
+        </Grid>
+
+        <!-- Status -->
+        <Border Grid.Row="4"
+                CornerRadius="10"
+                Background="{StaticResource DarkPanelBrush}"
+                BorderBrush="#24272C"
+                BorderThickness="1"
+                Padding="22,0">
+
+            <DockPanel LastChildFill="False">
+                <StackPanel Orientation="Horizontal"
+                            DockPanel.Dock="Left"
+                            VerticalAlignment="Center">
+                    <Ellipse Width="16"
+                             Height="16"
+                             Fill="#23B340"
+                             Stroke="#3DE05E"
+                             StrokeThickness="1"
+                             Margin="0,0,14,0"/>
+
+                    <TextBlock Text="{Binding StatusText}"
+                               Foreground="#D6D6D6"
+                               FontSize="16"
+                               VerticalAlignment="Center"/>
+                </StackPanel>
+
+                <TextBlock Text="Default output and master volume"
+                           DockPanel.Dock="Right"
+                           Foreground="#B8B8B8"
+                           FontSize="15"
+                           VerticalAlignment="Center"/>
+            </DockPanel>
+        </Border>
+
+    </Grid>
+</Window>

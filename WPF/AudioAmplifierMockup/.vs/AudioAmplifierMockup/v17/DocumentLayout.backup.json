@@ -1,0 +1,224 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Levy\\source\\repos\\AudioAmplifierMockup\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DB24B15D-BB60-4E1D-B65A-45143D70B0FF}|AudioAmplifierMockup\\AudioAmplifierMockup.csproj|c:\\users\\levy\\source\\repos\\audioamplifiermockup\\audioamplifiermockup\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB24B15D-BB60-4E1D-B65A-45143D70B0FF}|AudioAmplifierMockup\\AudioAmplifierMockup.csproj|solutionrelative:audioamplifiermockup\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB24B15D-BB60-4E1D-B65A-45143D70B0FF}|AudioAmplifierMockup\\AudioAmplifierMockup.csproj|c:\\users\\levy\\source\\repos\\audioamplifiermockup\\audioamplifiermockup\\audio\\audioanalyzerhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB24B15D-BB60-4E1D-B65A-45143D70B0FF}|AudioAmplifierMockup\\AudioAmplifierMockup.csproj|solutionrelative:audioamplifiermockup\\audio\\audioanalyzerhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB24B15D-BB60-4E1D-B65A-45143D70B0FF}|AudioAmplifierMockup\\AudioAmplifierMockup.csproj|c:\\users\\levy\\source\\repos\\audioamplifiermockup\\audioamplifiermockup\\mainwindow2.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{DB24B15D-BB60-4E1D-B65A-45143D70B0FF}|AudioAmplifierMockup\\AudioAmplifierMockup.csproj|solutionrelative:audioamplifiermockup\\mainwindow2.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Levy\\source\\repos\\AudioAmplifierMockup\\AudioAmplifierMockup\\obj\\Debug\\net8.0-windows\\App.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AudioAmplifierMockup\\obj\\Debug\\net8.0-windows\\App.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB24B15D-BB60-4E1D-B65A-45143D70B0FF}|AudioAmplifierMockup\\AudioAmplifierMockup.csproj|c:\\users\\levy\\source\\repos\\audioamplifiermockup\\audioamplifiermockup\\models\\audiodeviceinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB24B15D-BB60-4E1D-B65A-45143D70B0FF}|AudioAmplifierMockup\\AudioAmplifierMockup.csproj|solutionrelative:audioamplifiermockup\\models\\audiodeviceinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB24B15D-BB60-4E1D-B65A-45143D70B0FF}|AudioAmplifierMockup\\AudioAmplifierMockup.csproj|c:\\users\\levy\\source\\repos\\audioamplifiermockup\\audioamplifiermockup\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DB24B15D-BB60-4E1D-B65A-45143D70B0FF}|AudioAmplifierMockup\\AudioAmplifierMockup.csproj|solutionrelative:audioamplifiermockup\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB24B15D-BB60-4E1D-B65A-45143D70B0FF}|AudioAmplifierMockup\\AudioAmplifierMockup.csproj|c:\\users\\levy\\source\\repos\\audioamplifiermockup\\audioamplifiermockup\\viewmodels\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB24B15D-BB60-4E1D-B65A-45143D70B0FF}|AudioAmplifierMockup\\AudioAmplifierMockup.csproj|solutionrelative:audioamplifiermockup\\viewmodels\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB24B15D-BB60-4E1D-B65A-45143D70B0FF}|AudioAmplifierMockup\\AudioAmplifierMockup.csproj|c:\\users\\levy\\source\\repos\\audioamplifiermockup\\audioamplifiermockup\\services\\iaudiodeviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB24B15D-BB60-4E1D-B65A-45143D70B0FF}|AudioAmplifierMockup\\AudioAmplifierMockup.csproj|solutionrelative:audioamplifiermockup\\services\\iaudiodeviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB24B15D-BB60-4E1D-B65A-45143D70B0FF}|AudioAmplifierMockup\\AudioAmplifierMockup.csproj|c:\\users\\levy\\source\\repos\\audioamplifiermockup\\audioamplifiermockup\\services\\audiodeviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB24B15D-BB60-4E1D-B65A-45143D70B0FF}|AudioAmplifierMockup\\AudioAmplifierMockup.csproj|solutionrelative:audioamplifiermockup\\services\\audiodeviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB24B15D-BB60-4E1D-B65A-45143D70B0FF}|AudioAmplifierMockup\\AudioAmplifierMockup.csproj|c:\\users\\levy\\source\\repos\\audioamplifiermockup\\audioamplifiermockup\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB24B15D-BB60-4E1D-B65A-45143D70B0FF}|AudioAmplifierMockup\\AudioAmplifierMockup.csproj|solutionrelative:audioamplifiermockup\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB24B15D-BB60-4E1D-B65A-45143D70B0FF}|AudioAmplifierMockup\\AudioAmplifierMockup.csproj|c:\\users\\levy\\source\\repos\\audioamplifiermockup\\audioamplifiermockup\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB24B15D-BB60-4E1D-B65A-45143D70B0FF}|AudioAmplifierMockup\\AudioAmplifierMockup.csproj|solutionrelative:audioamplifiermockup\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB24B15D-BB60-4E1D-B65A-45143D70B0FF}|AudioAmplifierMockup\\AudioAmplifierMockup.csproj|c:\\users\\levy\\source\\repos\\audioamplifiermockup\\audioamplifiermockup\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DB24B15D-BB60-4E1D-B65A-45143D70B0FF}|AudioAmplifierMockup\\AudioAmplifierMockup.csproj|solutionrelative:audioamplifiermockup\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AudioAnalyzerHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Levy\\source\\repos\\AudioAmplifierMockup\\AudioAmplifierMockup\\Audio\\AudioAnalyzerHelper.cs",
+              "RelativeDocumentMoniker": "AudioAmplifierMockup\\Audio\\AudioAnalyzerHelper.cs",
+              "ToolTip": "C:\\Users\\Levy\\source\\repos\\AudioAmplifierMockup\\AudioAmplifierMockup\\Audio\\AudioAnalyzerHelper.cs",
+              "RelativeToolTip": "AudioAmplifierMockup\\Audio\\AudioAnalyzerHelper.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAwwFAAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T07:33:45.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.g.cs",
+              "DocumentMoniker": "C:\\Users\\Levy\\source\\repos\\AudioAmplifierMockup\\AudioAmplifierMockup\\obj\\Debug\\net8.0-windows\\App.g.cs",
+              "RelativeDocumentMoniker": "AudioAmplifierMockup\\obj\\Debug\\net8.0-windows\\App.g.cs",
+              "ToolTip": "C:\\Users\\Levy\\source\\repos\\AudioAmplifierMockup\\AudioAmplifierMockup\\obj\\Debug\\net8.0-windows\\App.g.cs",
+              "RelativeToolTip": "AudioAmplifierMockup\\obj\\Debug\\net8.0-windows\\App.g.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAawEAAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T07:27:26.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow2.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Levy\\source\\repos\\AudioAmplifierMockup\\AudioAmplifierMockup\\MainWindow2.xaml.cs",
+              "RelativeDocumentMoniker": "AudioAmplifierMockup\\MainWindow2.xaml.cs",
+              "ToolTip": "C:\\Users\\Levy\\source\\repos\\AudioAmplifierMockup\\AudioAmplifierMockup\\MainWindow2.xaml.cs",
+              "RelativeToolTip": "AudioAmplifierMockup\\MainWindow2.xaml.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAiwBUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T07:25:46.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Levy\\source\\repos\\AudioAmplifierMockup\\AudioAmplifierMockup\\App.xaml",
+              "RelativeDocumentMoniker": "AudioAmplifierMockup\\App.xaml",
+              "ToolTip": "C:\\Users\\Levy\\source\\repos\\AudioAmplifierMockup\\AudioAmplifierMockup\\App.xaml",
+              "RelativeToolTip": "AudioAmplifierMockup\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-19T07:24:50.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Levy\\source\\repos\\AudioAmplifierMockup\\AudioAmplifierMockup\\ViewModels\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "AudioAmplifierMockup\\ViewModels\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\Levy\\source\\repos\\AudioAmplifierMockup\\AudioAmplifierMockup\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "AudioAmplifierMockup\\ViewModels\\MainViewModel.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAIAzwKIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T07:09:06.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Levy\\source\\repos\\AudioAmplifierMockup\\AudioAmplifierMockup\\ViewModels\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "AudioAmplifierMockup\\ViewModels\\RelayCommand.cs",
+              "ToolTip": "C:\\Users\\Levy\\source\\repos\\AudioAmplifierMockup\\AudioAmplifierMockup\\ViewModels\\RelayCommand.cs",
+              "RelativeToolTip": "AudioAmplifierMockup\\ViewModels\\RelayCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T07:08:43.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BaseViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Levy\\source\\repos\\AudioAmplifierMockup\\AudioAmplifierMockup\\ViewModels\\BaseViewModel.cs",
+              "RelativeDocumentMoniker": "AudioAmplifierMockup\\ViewModels\\BaseViewModel.cs",
+              "ToolTip": "C:\\Users\\Levy\\source\\repos\\AudioAmplifierMockup\\AudioAmplifierMockup\\ViewModels\\BaseViewModel.cs",
+              "RelativeToolTip": "AudioAmplifierMockup\\ViewModels\\BaseViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T07:08:25.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AudioDeviceService.cs",
+              "DocumentMoniker": "C:\\Users\\Levy\\source\\repos\\AudioAmplifierMockup\\AudioAmplifierMockup\\Services\\AudioDeviceService.cs",
+              "RelativeDocumentMoniker": "AudioAmplifierMockup\\Services\\AudioDeviceService.cs",
+              "ToolTip": "C:\\Users\\Levy\\source\\repos\\AudioAmplifierMockup\\AudioAmplifierMockup\\Services\\AudioDeviceService.cs",
+              "RelativeToolTip": "AudioAmplifierMockup\\Services\\AudioDeviceService.cs",
+              "ViewState": "AgIAAFkBAAAAAAAAAAAYwG4BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T07:07:58.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IAudioDeviceService.cs",
+              "DocumentMoniker": "C:\\Users\\Levy\\source\\repos\\AudioAmplifierMockup\\AudioAmplifierMockup\\Services\\IAudioDeviceService.cs",
+              "RelativeDocumentMoniker": "AudioAmplifierMockup\\Services\\IAudioDeviceService.cs",
+              "ToolTip": "C:\\Users\\Levy\\source\\repos\\AudioAmplifierMockup\\AudioAmplifierMockup\\Services\\IAudioDeviceService.cs",
+              "RelativeToolTip": "AudioAmplifierMockup\\Services\\IAudioDeviceService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T07:07:36.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AudioDeviceInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Levy\\source\\repos\\AudioAmplifierMockup\\AudioAmplifierMockup\\Models\\AudioDeviceInfo.cs",
+              "RelativeDocumentMoniker": "AudioAmplifierMockup\\Models\\AudioDeviceInfo.cs",
+              "ToolTip": "C:\\Users\\Levy\\source\\repos\\AudioAmplifierMockup\\AudioAmplifierMockup\\Models\\AudioDeviceInfo.cs",
+              "RelativeToolTip": "AudioAmplifierMockup\\Models\\AudioDeviceInfo.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA1wCoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T07:07:08.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Levy\\source\\repos\\AudioAmplifierMockup\\AudioAmplifierMockup\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "AudioAmplifierMockup\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Levy\\source\\repos\\AudioAmplifierMockup\\AudioAmplifierMockup\\MainWindow.xaml",
+              "RelativeToolTip": "AudioAmplifierMockup\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-19T07:06:18.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Levy\\source\\repos\\AudioAmplifierMockup\\AudioAmplifierMockup\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "AudioAmplifierMockup\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Levy\\source\\repos\\AudioAmplifierMockup\\AudioAmplifierMockup\\MainWindow.xaml.cs",
+              "RelativeToolTip": "AudioAmplifierMockup\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T07:06:16.962Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

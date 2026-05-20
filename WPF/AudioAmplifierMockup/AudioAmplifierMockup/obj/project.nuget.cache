@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "sHh0OKGhfkk=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Levy\\source\\repos\\AudioAmplifierMockup\\AudioAmplifierMockup\\AudioAmplifierMockup.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Levy\\.nuget\\packages\\naudio\\2.3.0\\naudio.2.3.0.nupkg.sha512",
+    "C:\\Users\\Levy\\.nuget\\packages\\naudio.asio\\2.3.0\\naudio.asio.2.3.0.nupkg.sha512",
+    "C:\\Users\\Levy\\.nuget\\packages\\naudio.core\\2.3.0\\naudio.core.2.3.0.nupkg.sha512",
+    "C:\\Users\\Levy\\.nuget\\packages\\naudio.midi\\2.3.0\\naudio.midi.2.3.0.nupkg.sha512",
+    "C:\\Users\\Levy\\.nuget\\packages\\naudio.wasapi\\2.3.0\\naudio.wasapi.2.3.0.nupkg.sha512",
+    "C:\\Users\\Levy\\.nuget\\packages\\naudio.winforms\\2.3.0\\naudio.winforms.2.3.0.nupkg.sha512",
+    "C:\\Users\\Levy\\.nuget\\packages\\naudio.winmm\\2.3.0\\naudio.winmm.2.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}
